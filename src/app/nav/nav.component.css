@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar-nav .nav-link {
+  color: black;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(255, 115, 0); /* Change color on hover */
+}
+.navbar-brand {
+  color: black;
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.navbar-toggler-icon {
+  background-color: black;
+  border-radius: 7px;
+  color: black;
+}
+.dropdown {
+  border: none;
+}
+.dropdown .btn {
+  font-weight: 700;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.search-txt {
+  margin-left: 80px;
+}
+.d-flex .fas {
+  font-size: 20px;
+}
+input {
+  border: none;
+  outline: none;
+}

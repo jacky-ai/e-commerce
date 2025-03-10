@@ -1,26 +1,91 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">Logo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mynavbar">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">MAN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">WOMAN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">KID'S</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="text" placeholder="Search">
-          <button class="btn btn-primary" type="button">Search</button>
-        </form>
-      </div>
+<nav class="navbar navbar-expand-sm navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">E-COMMERCE</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mynavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              Men
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Man</a></li>
+              <li><a class="dropdown-item" href="#">Woman</a></li>
+              <li><a class="dropdown-item" href="#">Kid's</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              Women
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Man</a></li>
+              <li><a class="dropdown-item" href="#">Woman</a></li>
+              <li><a class="dropdown-item" href="#">Kid's</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Collection</a>
+        </li>
+        <li class="nav-item"></li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="me-2" type="text" placeholder="Search" />
+
+        <button class="btn">
+          <a href=""><i class="fas fa-search" style="color: black"></i></a>
+        </button>
+        <button class="btn">
+          <a href=""
+            ><i
+              class="fa-solid fa-cart-flatbed-suitcase"
+              style="color: black; font-size: 20px; margin-top: 10px"
+            ></i>
+          </a>
+        </button>
+        <div class="dropdown" style="padding-right: 10px">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            <i
+              class="fa-solid fa-user"
+              style="color: black; font-size: 20px; margin-top: 10px"
+            ></i>
+          </button>
+
+          <ul class="dropdown-menu" style="margin-right: 80px">
+            <li><a class="dropdown-item" href="#">Sign up</a></li>
+            <li><a class="dropdown-item" href="#">Log in</a></li>
+          </ul>
+        </div>
+      </form>
     </div>
-  </nav>
-  
+  </div>
+</nav>
