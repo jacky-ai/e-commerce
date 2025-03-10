@@ -1,6 +1,6 @@
 footer {
-  background-color: #ff6600;
-  color: #fff;
+  background-color: #fafafa;
+  color: black;
   padding: 50px 0;
   font-family: "Arial", sans-serif;
 }
@@ -16,19 +16,25 @@ footer {
 
 .footer-column {
   flex: 1;
+  min-width: 250px; /* Ensures columns don't shrink too much */
   margin: 20px;
 }
 
-.footer-column h3,
+.brand h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
 .footer-column h4 {
   font-size: 1.2em;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .footer-column p {
-  line-height: 1.8;
+  line-height: 1.6;
+  font-size: 1em;
 }
 
 .footer-column ul {
@@ -37,56 +43,87 @@ footer {
 }
 
 .footer-column ul li {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .footer-column ul li a {
-  color: #fff;
+  color: black;
   text-decoration: none;
-  font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .footer-column ul li a:hover {
-  color: #000;
+  color: #555;
 }
 
+/* Social Icons */
 .social-icons {
   display: flex;
+  gap: 15px;
 }
 
 .social-icons a {
-  color: #fff;
-  font-size: 1em;
-  margin-right: 20px;
-  transition: transform 0.3s ease;
+  color: black;
+  font-size: 1.5em;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-icons a:hover {
   transform: scale(1.2);
+  color: #555;
 }
 
-.footer-bottom {
-  text-align: center;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #fff;
+/* Subscription Form */
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
 }
 
-.footer-bottom p {
-  font-size: 0.9em;
+.subscribe-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
 }
 
-.footer-bottom a {
-  color: #fff;
+.subscribe-form button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
   font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.footer-bottom a:hover {
-  color: #000;
+.subscribe-form button:hover {
+  background-color: #333;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin: 15px auto;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-form input {
+    width: 100%;
+  }
 }
