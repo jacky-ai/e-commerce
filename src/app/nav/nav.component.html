@@ -1,97 +1,110 @@
-<nav class="navbar navbar-expand-sm navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">E-COMMERCE</a>
+    <div class="logo">
+      <a class="navbar-brand" href="/" style="color: black"
+        ><img src="logo.png" alt="" /><span>FLONE.</span></a
+      >
+    </div>
     <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#mynavbar"
+      aria-controls="mynavbar"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
       <ul class="navbar-nav mx-auto">
+        <!-- Men Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="menDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Men
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="menDropdown">
+            <li><a class="dropdown-item" href="#">T-shirt</a></li>
+            <li><a class="dropdown-item" href="#">Suit</a></li>
+            <li><a class="dropdown-item" href="#">Trouser</a></li>
+            <li><a class="dropdown-item" href="#">Jacket</a></li>
+            <li><a class="dropdown-item" href="#">Hoodie</a></li>
+            <li><a class="dropdown-item" href="#">Shorts</a></li>
+          </ul>
+        </li>
+
+        <!-- Women Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="womenDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Women
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="womenDropdown">
+            <li><a class="dropdown-item" href="#">Top</a></li>
+            <li><a class="dropdown-item" href="#">Slip</a></li>
+            <li><a class="dropdown-item" href="#">Saree</a></li>
+            <li><a class="dropdown-item" href="#">Skirt</a></li>
+            <li><a class="dropdown-item" href="#">Bracelet</a></li>
+            <li><a class="dropdown-item" href="#">Blouse</a></li>
+          </ul>
+        </li>
+
         <li class="nav-item">
-          <div class="dropdown">
-            <button
-              class="btn dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-            >
-              Men
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">T-shirt</a></li>
-              <li><a class="dropdown-item" href="#">Suit</a></li>
-              <li><a class="dropdown-item" href="#">Trouser</a></li>
-              <li><a class="dropdown-item" href="#">Jacket</a></li>
-              <li><a class="dropdown-item" href="#">Hoodie</a></li>
-              <li><a class="dropdown-item" href="#">Shorts</a></li>
-            </ul>
-          </div>
+          <a class="nav-link" href="#">Collection</a>
         </li>
         <li class="nav-item">
-          <div class="dropdown">
-            <button
-              class="btn dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-            >
-              Women
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Top</a></li>
-              <li><a class="dropdown-item" href="#">Slip</a></li>
-              <li><a class="dropdown-item" href="#">Saree</a></li>
-              <li><a class="dropdown-item" href="#">Skirt</a></li>
-              <li><a class="dropdown-item" href="#">Bracelet</a></li>
-              <li><a class="dropdown-item" href="#">Blouse</a></li>
-            </ul>
-          </div>
+          <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Collection</a>
-        </li>
-        <li class="nav-item"></li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Contact</a>
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="me-2" type="text" placeholder="Search" />
-
-        <button class="btn">
-          <a href=""><i class="fas fa-search" style="color: black"></i></a>
-        </button>
-        <button class="btn">
-          <a href=""
-            ><i
-              class="fa-solid fa-cart-flatbed-suitcase"
-              style="color: black; font-size: 20px; margin-top: 10px"
-            ></i>
-          </a>
-        </button>
-        <div class="dropdown" style="padding-right: 10px">
-          <button
-            class="btn dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-          >
-            <i
-              class="fa-solid fa-user"
-              style="color: black; font-size: 20px; margin-top: 10px"
-            ></i>
+      <div class="Icons">
+        <!-- Right-Side Icons -->
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search" />
+          <button class="btn" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="btn ms-2">
+            <i class="fa-solid fa-cart-flatbed-suitcase"></i>
           </button>
 
-          <ul class="dropdown-menu" style="margin-right: 40px">
-            <li><a class="dropdown-item" href="#">Sign up</a></li>
-            <li><a class="dropdown-item" href="#">Log in</a></li>
-          </ul>
-        </div>
-      </form>
+          <!-- User Dropdown -->
+          <div class="dropdown ms-2">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="userDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-user"></i>
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="userDropdown"
+            >
+              <li><a class="dropdown-item" href="#">Sign up</a></li>
+              <li><a class="dropdown-item" href="#">Log in</a></li>
+            </ul>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </nav>

@@ -1,43 +1,126 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Navbar Links */
 .navbar-nav .nav-link {
   color: black;
   font-weight: 700;
   font-family: sans-serif;
+  transition: color 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-link:hover {
-  color: rgb(255, 115, 0); /* Change color on hover */
+  color: rgb(255, 115, 0);
 }
+
+/* Navbar Brand */
 .navbar-brand {
   color: black;
   font-weight: 700;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+/* Navbar Toggler */
+.navbar-toggler {
+  outline: none;
+}
+
 .navbar-toggler-icon {
   background-color: black;
-  border-radius: 7px;
-  color: black;
+  width: 30px;
+  display: block;
+  border-radius: 5px;
+  margin: 5px auto;
 }
-.dropdown {
-  border: none;
-}
+
+/* Dropdown Styling */
 .dropdown .btn {
   font-weight: 700;
+  color: black;
 }
-.dropdown:hover .dropdown-menu {
-  display: block;
+
+.dropdown-menu {
+  display: none; /* Default hidden */
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-.search-txt {
-  margin-left: 80px;
+
+/* Show dropdown on hover for large screens */
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
 }
-.d-flex .fas {
-  font-size: 20px;
-}
+
+/* Search Input */
 input {
-  border: none;
+  border: 1px solid #ccc;
   outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Icons */
+.d-flex .fas,
+.d-flex .fa-solid {
+  font-size: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.d-flex .fas:hover,
+.d-flex .fa-solid:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .search-txt {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .d-flex {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .d-flex button {
+    margin-left: 5px;
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+.logo img {
+  height: 45px;
+  width: 100px;
+  transition: all 0.5s ease;
+}
+.logo img:hover {
+  transform: scale(1.3);
+  transition: 0.8s ease-in-out;
 }
