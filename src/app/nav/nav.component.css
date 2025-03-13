@@ -80,7 +80,7 @@ input {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .navbar-nav {
     text-align: center;
   }
@@ -89,9 +89,9 @@ input {
     margin-bottom: 10px;
   }
 
-  .search-txt {
-    margin-left: 0;
-    width: 100%;
+  .d-flex .search {
+    margin-right: 30px;
+    width: 90%;
   }
 
   .d-flex {
@@ -115,6 +115,7 @@ input {
     display: block;
   }
 }
+
 .logo img {
   height: 45px;
   width: 100px;
