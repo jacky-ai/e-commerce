@@ -38,72 +38,49 @@
   transition: 0.5s;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .carousel-item img {
-    height: 60vh;
-  }
-  .carousel-caption {
-    padding: 10px;
-  }
-  .carousel-caption h1 {
-    font-size: 2rem;
-  }
-  .carousel-caption p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .carousel-item img {
-    height: 50vh;
-  }
-  .carousel-caption {
-    padding: 8px;
-  }
-  .carousel-caption h1 {
-    font-size: 1.5rem;
-  }
-  .carousel-caption p {
-    font-size: 0.9rem;
-  }
-}
 .shipping-detail h4 {
   font-size: 1.2rem;
 }
-.shipping-container {
+.container-shipping {
+  padding: 20px;
+  gap: 15px;
   display: flex;
   justify-content: center;
-  margin: 10px;
 }
 .shipping-column {
-  margin: 20px;
-  padding: 5px;
+  padding: 20px;
+  background-color: rgb(204, 202, 202);
+  border-radius: 10px;
+  border: 2px solid black;
   text-align: center;
 }
 .shipping-column i {
   font-size: 30px;
+  transition: 0.5s;
 }
-@media (max-width: 625px) {
-  .shipping-container {
+.shipping-column i:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 576px) {
+  .container-shipping {
     flex-direction: column;
   }
 }
 
-.container {
+.container-product {
+  margin: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
   padding: 10px;
-  border: 2px solid blue;
 }
 .card {
   justify-content: center;
   align-items: center;
   width: 250px;
   height: 500px;
-  margin-top: 20px;
 }
 .cloth-hover {
   overflow: hidden;
@@ -152,6 +129,7 @@ h5 {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 .btn {
   padding: 10px;
@@ -191,7 +169,7 @@ small {
 /* Responsive Grid */
 @media (max-width: 992px) {
   .container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
@@ -200,6 +178,7 @@ small {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr, 1fr));
   }
 }
+
 /* Landscape Mode */
 @media screen and (max-height: 500px) and (orientation: landscape) {
   .container {
@@ -210,5 +189,46 @@ small {
   .btn {
     padding: 8px;
     font-size: 12px;
+  }
+}
+.card-heading {
+  text-align: center;
+}
+.blog-heading {
+  text-align: center;
+}
+.container-blog {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.blog-card {
+  text-align: center;
+}
+.blog-card .blog-card-detail {
+  background-color: #c2bdbd;
+  color: black;
+  border-radius: 0 0px 20px 20px;
+  transition: 1s ease;
+  padding-right: 10px;
+}
+.blog-card .blog-card-detail:hover {
+  transform: translateY(-40px);
+}
+h5 {
+  text-align: center;
+}
+.blog-card img {
+  height: 200px;
+  border-radius: 0 0 10px 10px;
+}
+@media (max-width: 576px) {
+  .container-blog {
+    flex-direction: column;
+  }
+  .blog-card img {
+    width: 100%;
   }
 }
