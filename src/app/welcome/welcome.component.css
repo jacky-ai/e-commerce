@@ -49,9 +49,9 @@
 }
 .shipping-column {
   padding: 20px;
-  background-color: rgb(204, 202, 202);
   border-radius: 10px;
-  border: 2px solid black;
+  background: #fdfcfc;
+  box-shadow: 7px 7px 15px #b3b1b1, -7px -7px 10px #f2efef;
   text-align: center;
 }
 .shipping-column i {
@@ -81,6 +81,8 @@
   align-items: center;
   width: 250px;
   height: 500px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 7px #b3b1b1, -5px -5px 7px #f2efef;
 }
 
 .cloth-hover {
